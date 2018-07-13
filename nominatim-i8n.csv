@@ -1,0 +1,237 @@
+###########################################################################
+#
+# nominatim-i8n.csv: Internationalisation for nominatim search results
+#                    Translation of <place type="">-Attributes
+#
+# First line contains a list of all supported languages (ISO 639-1) with
+# default (en) as first row. Only 2-char-codes please, "de-ch" or "en-us"
+# is not supported.
+# 
+# each following line contains the english expression as first row and then
+# the translations for each language. These lines don't have to be 
+# complete, if some translation is missing, we will take the default 
+# value.
+#
+# Delimiter is ":", empty fields (like "city:Stadt::Ville:Ciudad") are ok, 
+# emty lines are ok, "#" as first char flags a comment
+# 
+# Character set is UTF-8 (in fact the character set is not important, but
+# the browser has to interpret this and all other results of nominatim
+# search are UTF-8. HTML-entities like in "Stra&szlig;e" are also ok)
+#
+###########################################################################  
+
+#
+# At first the supported languages
+#
+
+en 		 :de  				:hu 			:sr	 			:it
+
+#
+# Roads
+#
+bridleway        : Reitweg                      : lovaglóösvény         : koњска стаза		: Percorso per equitazione 
+crossing         : Kreuzung                     : kereszteződés         : раскрсница		: Incrocio
+cycleway         : Radweg                       : kerékpárút            : бициклистичка стаза		: Percorso ciclabile 
+footway          : Fus&szlig;weg                : gyaloglóösvény        : пешачка стаза		: Camminamento pedonale 
+pedestrian       : Fus&szlig;g&auml;ngerzone 	: gyalogos övezet	: Пешачка зона		: Percorso pedonale 
+motorway         : Autobahn 			: autópálya		: аутопут		: Autostrada
+motorway_link    : Autobahnauffahrt 		: autópálya kapcsolat	: аутопут_веза		: Collegamento autostradale
+motorway_junction: Autobahnkreuz	 	: autópálya csomópont	: аутопут чвориште		: Svincolo autostradale
+path             : Weg                          : ösvény                : стаза		: Percorso
+trunk		 : Schnellstraße		: gyorsforgalmi_utca	: браза_улица		: Linea
+living_street    : Stra&szlig;e  		: Utca 			: улица		: Strada di città
+primary          : Stra&szlig;e  		: elsődleges		: Главних пут		: Strada primaria 
+primary_link     : Stra&szlig;e  		: elsődleges kapcsolat  : Главних пут		: Collegamento primario
+residential      : Stra&szlig;e  		: lakófelületi 		: улица		: Strada residenziale
+road             : Stra&szlig;e  		: út 			: улица		: Strada
+secondary        : Stra&szlig;e  		: másodlagos 		: Регионални пут		: Strada secondaria
+secondary_link   : Stra&szlig;e  		: másodlagos kapcsolat  : Регионални пут		: Collegamento secondario
+tertiary         : Stra&szlig;e  		: harmadlagos 		: Терциарни пут		: Strada terziaria 
+tertiary_link    : Stra&szlig;e  		: harmadlagos kapcsolat : секундарни_беза		: Collegamento terziario		
+unclassified     : Stra&szlig;e  		: minősitetlen 		: без квалификације		: Strada non classificata 
+service          : Zufahrt 			: szolgálati út		: сервисни пут		: Strada di servizio
+raceway          : Rennstrecke                  : versenypálya          : тракачка стаза		: Circuito automobilistico
+track		 : Feldweg			: mezei út		: пољцки пут		: Pista da corsa 
+bus_stop	 : Bushaltestelle		: buszmegálló		: аутобуско_стајалиште		: Fermata autobus
+bus_station	 : Busbahnhof			: autóbuszállomás	: аутобуска_станица		: Stazione autobus
+
+
+#
+# Towns, cities, administrative areas
+#
+administrative       : Verwaltungsgrenze: adminisztrativ határ: Административних граница	: Amministrativa
+country              : Staat 		: ország 	: Држава	: Nazione
+state                : Land 		: állam         : Покрајина		: Stato
+county               : Kreis 		: körzet	: Округ		: Contea	
+region               : Region 		: régió		: Округ		: Regione 
+city                 : Stadt 		: város 	: град		: Città
+farm                 : Bauernhof 	: farm		: Фарма		: Area agricola
+hamlet               : Weiler           : falucska      : село		: Borgo
+islet                : Insel            : szigetecske   : острво	: Isoletta 
+isolated_dwelling    : Weiler           : elszigetelt lakás:изолован_стан	: Villaggio
+locality             : Ort 		: Település	: локалитет		: Località 
+suburb               : Stadtteil 	: külváros 	: окружни	: Quartiere
+town                 : Stadt 		: város		: град		: Paese
+village              : Dorf 		: falu  	: Село		: Frazione
+
+#
+#Rail
+#
+tram_stop	: Straßenbahnhaltestelle:villamosmegálló:трамвајско_стајалиште	: Fermata del tram
+halt		: Bahnhof		:sorompó	: жељезничка_станица	: Fermata
+station		: Bahnhof		:vasútállomás   : Станица	: Stazione
+platform	: Bahnsteig		:peron		: Платформа		: Piattaforma
+
+#
+# Water
+#
+
+water		: Gew&auml;sser		:viz		: воде		: Acqua
+river		: Fluss 		:folyó 		: река		: Fiume
+stream		: Bach			:patak		: поток		: Corso d'acqua
+canal		: Kanal			:csatorna	: канал		: Canale
+dam		: Damm			:gát		: брана		: Diga
+#
+# Landcover 
+#
+
+forest  	: Wald 			: erdő		: Шума		: Foresta
+heath   	: Heide			: egézség	: врх		: Brughiera	
+peak    	: Gipfel 		: Hegy 		: врхунац		: Picco montuoso 
+commercial	: Gewerbegebiet		: kereskedelmi	: Бусинесс Парк		: Area Commerciale
+residential	: Wohngebiet		: lakófelületi	: стамбени простор		: Area residenziale
+retail		: 			: kiskereskedelmi:мала_привреда		: Area di distribuzione
+industrial	: Industriegebiet	: ipari zóna	: индустријској зони	: Area industriale
+cemetery	: Friedhof		: temető	: гробље	: Cimitero
+
+#
+# leisure
+#
+sports_centre	: Sportzentrum		:Sportközpont	: спортски_центар	: Centro sportivo
+golf_course	: Golfanlage		:golftanfolyam	: курс_голфа	: Campo da golf  
+stadium		: Stadium		:stаdion	: стадион	: Stadio
+pitch		: Spielfeld		:csoportsport	: поље	: Campo sportivo
+water_park	: Wasserpark		:élménypark	: водени_парк	: Parco acquatico
+marina		: Yachthafen		:jahtkikötő	: марина	: Porto turistico 
+nature_reserve	: NSG			:természet_tartalék:природна_резрерва	: Riserva naturale
+park		: Park			:park		: парк		: Parco
+playground	: Spielplatz		:játszótér	: игралиште		: Parco giochi 
+garden		: Garten		:kert		: врт		: Giardino
+ice_rink	: Eisbahn		:jégpálya	: ледена_стаза		: Pista di ghiaccio 
+miniature_golf	: Mini-Golf		:minigolf	: мини_голф		: Minigolf 
+
+#
+#Amenity
+#
+restaurant	: Restaurant 		:étterem 	: Ресторан		: Ristorante
+fast_food	: Fast Food		:gyorsbüfé	: хамбургерија		: Fast food 
+drinking_water	: Trinwasserstelle	:ivóviz		: вода_за_пиће		: Acqua potabile
+bbq		: Grillstelle		:grillsütőhely	: место_за_грил		: Griglieria
+pub		: Kneipe		:korcsma	: крЧма		: Pub
+cafe 		: Cafe 			:kávéház 	: Кафе 		: Caffè
+biergarten	: Biergarten		:sörkert	: пивница		: Birreria
+ice_cream	: Eis-Cafe		:fagylalt	: сладолед		: Gelateria
+kindergarten	: Kindergarten		:óvoda		: забавиште		: Asilo infantile 
+school 		: Schule 		:iskola 	: школа		: Scuola
+college		: Hochschule		:főiskola	: виша школа		: Scuola superiore 
+library		: Bibliothek		:könyvtár	: библиотека		: Biblioteca
+university	: Universität		:egyetem	: универзитет		: Università
+
+ferry_terminal	: Fährterminal		:kompkikötő	: трајект		: Terminal traghetto
+car_rental	: Autovermietung	:autókölcsönző	: изнајмљивање_возила		: Autonoleggio 
+fuel 		: Tankstelle 		:üzemanyag 	: Бензинска пумпа		: Stazione di rifornimento 
+parking		: Parkplatz		:parkolás	: паркинг		: Parcheggio
+taxi		: Taxi			:taxi		: такси		: Stazione taxi
+bank		: Bank			:bank		: банк		: Banca
+pharmacy 	: Apotheke 		:gyógyszertár 	: Апотека		: Farmacia
+hospital	: Krankenhaus		:kórház		: болница		: Ospedale
+social_facility	: Soziale Einrichtung	:szociális_létesitmény:социална_установа		: Assistenza sociale
+arts_centre	: Kunstzentrum		:müvészeti_központ:уметнички_центар		: Centro d'arte
+cinema		: Kino			:mozi		: биоскоп		: Cinema
+community_centre: Gemeinschaftszentrum	:közösségi_központ:центар_заједнице		: Centro comunale
+social_centre	: Soziale Einrichtung	:szociális_központ:социјални_центар		: Centro sociale
+nightclub	: Nachtclub		:éjszakai_mulató: ноћни_клуб		: Locale notturno
+theatre		: Theater		:szinház	: позориште		: Teatro
+courthouse	: courthouse		:birósági_épület: зграда_суда		: Tribunale
+embassy		: Botschaft		:külképviselet	: амбасада		: Ambasciata
+fire_station	: Feuerwache		:tüzoltó_állomás: ватрогасна_станица	: Vigili del fuoco 
+grave_yard	: Friedhof		:temetkezési_hely: место_за_сахрањивање		: Cimitero
+marketplace	: Markt			:vásártér	: тржница	: Mercato
+place_of_worship: Kirche,Synagoge,Moschee :Vallás kegyhely: место_религије 		: Luogo di culto 
+police		: Polizei		:rendőrség	: полиција		: Polizia
+post_office	: Postamt		:postahivatal	: пошта		: Ufficio postale
+prison		: Gefängnis		:fegyház	: притвор		: Prigione
+public building	: öfftl. Gebäude	:városháza 	: градска скупштина		: Edificio pubblico 
+recycling 	: Recycling 		:hulladékfeldolgozás : Рециклажа 	: Area di riciclo
+town_hall	: Rathaus		:városháza	: градска кућа		: Municipio
+
+
+#
+# Misc
+#
+
+electronics 	: Elektroladen 		:elektronika 	: продавница	: Elettronica
+runway		: Start-/Landebahn	:Kifutópálya	: авионска_писта	: Pista
+city_wall	: Stadtmauer		:városfal	: градска_зидина	: Mura cittadine
+toll_booth	: Mautstelle		:szerszáмos_bodé: кућица_алата	: Casello
+aerodrome	: Flughafen		:repülőtér	: аеродром		: Aeroporto
+
+#
+#Shops
+#
+bakery		: Bäckerei		:pékség		:пекара		: Panetteria
+beauty		: Kosmetiksalon		:szépségszalon	:салон_лепоте	: Centro estetico
+beverages	: Getränkemarkt		:italok		:пића	: Distributore di bevande
+books		: Buchladen		:könyvek	:књиге		: Libreria
+boutique	: Boutique		:butik		:бутик		: Negozio
+butcher		: Fleischer		:hentes		:месара		: Macellaio
+car		: Autohaus		:autóház	:кућа_аутомобила	: Concessionaria
+car_repair	: Autowerkstatt		:autómechanikus	:аутомеханичар	: Carrozzeria
+chemist		: Drogerie		:gyógyszertár	:апотека	: Farmacia
+clothes		: Bekleidungsgeschäft	:ruházat	:гардероба	: Abbigliamento
+computer	: Computer-Laden	:számitástechnika:информатичка_опрема	: Informatica
+confectionery	: Süßwarenhändler	:cukrászda	:посластичар	: Pasticceria
+convenience	: Tante-Emma-Laden	:kényelem	:удобности	: Minimarket 
+department_store: Kaufhaus		:áruház		:робна_кућа		: Grandi magazzini
+dry_cleaning	: Reinigung		:vegytisztitó   :хемиикси_чистач	: Lavasecco
+doityourself	: Baumarkt		:csináldmagad	:урадисам	: Fai da te
+electronics	: Elektro-Martk		:elektronika	:електронски_уређаји	: Elettronica
+florist		: Blumenladen		:virágüzlet	:цвећарниџа		: Fioraio
+garden_centre	: Garten-Center		:kert_központ	:врт_центар		: Vivaio
+greengrocer	: Gemüse-Händler	:zöldséges	:поврће		: Fruttivendolo
+hairdresser	: Friseur		:fodrász	:фризерски_салон	: Parrucchiere
+jewelry		: Juwelier		:ékszerész	:накит_злато	: Gioielleria
+kiosk		: Kiosk			:kioszk		:киоск		: Edicola
+laundry		: Reinigung		:patyolat 	:веш		: Lavanderia
+mall		: Einkaufszentrum	:sétálóutca	:главна_улица		: Centro commerciale
+mobile_phone	: Handy-Shop		:mobil_telefon	:мобилни_телефони	: Telefonia
+newsagent	: Zeitungshändler	:újságos	:новинар	: Giornalaio
+organic		: Bio-Laden		:bio_üzlet	:био_продавница		: Organico
+pet		: Zoohandlung		:házikedvenc	:кућни_љубимац	: Animali
+shoes		: Shuhladen		:cipők		:обуће		: Scarpe
+stationery	: Schreibwarenladen	:irodaszer	:канцеларијски_прибор	: Cancelleria
+supermarket	: Supermarkt		:szupermarket	:супермаркет	: Supermercato
+tobacco		: Tabakladen		:dohányüzlet	:дуван	: Tabacchi
+toys		: Spielzeugladen	:játékszer	:играчке	: Giochi
+
+#
+#Tourism
+#	
+attraction	: Attraktion		:szenzáció	:сензације	: Attrazione
+artwork		: Kunstwerk		:müvészeti_alkotás:уметничко_дело	: Opera d'arte 
+camp_site	: Campingplatz		:sátorozó_hely	:место_камповања	: Campeggio
+hotel 		: Hotel 		:szálloda 	:Хотел	: Hotel
+motel		: Motel			:motel		:мотел	: Motel
+museum		: Museum		:múzeum		:музеј	: Museo
+theme_park	: Freizeitpark		:szabadidőpark	:парк_забаве	: Parco divertimenti 
+
+#
+#Historic
+#
+
+castle		: Burg			:kastély	:дворац		: Castello
+memorial	: Gedänkstätte		:kegyhely	:место_за_сећање	: Memoriale
+monument	: Denkmal		:emlékmü	:споменик	: Monumento
+
+
