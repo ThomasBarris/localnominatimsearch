@@ -14,7 +14,7 @@ An example with english localisation is currently running [here](http://www.code
 Due to the limits of the public Nomination server, it use a lockfile to limit requests to max 1 request per second.
 
 ## Team
-The most work was done by [Max](https://wiki.openstreetmap.org/wiki/User:Maxbe).
+Most of the work was done by [Max](https://wiki.openstreetmap.org/wiki/User:Maxbe).
 
 ## Support
 No support. But you can try to contact me at thomas@codegeo.de
