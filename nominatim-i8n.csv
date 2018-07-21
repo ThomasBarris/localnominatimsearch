@@ -120,6 +120,7 @@ playground	: Spielplatz		:játszótér	: игралиште		: Parco giochi
 garden		: Garten		:kert		: врт		: Giardino
 ice_rink	: Eisbahn		:jégpálya	: ледена_стаза		: Pista di ghiaccio 
 miniature_golf	: Mini-Golf		:minigolf	: мини_голф		: Minigolf 
+allotments      : Kleingärten           :veteményeskertek : повртњаци   : orti
 
 #
 #Amenity
