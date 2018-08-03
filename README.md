@@ -6,6 +6,7 @@ An example with english localisation is currently running [here](http://www.code
 ## Installation
 - All code except OpenLayers 2 is included 
 - Download and unpack OpenLayers 2.x 
+- requires php-curl
 - Change path to OpenLayers.js in line 19 in index.hml 
 - Change language code you want in line 38 in index.hml 
 - Ensure all translations for the selected language code are included in nominatim-i8n.csv 
